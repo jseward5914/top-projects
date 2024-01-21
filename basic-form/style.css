@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Norse";
+    src: url(./Norse-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: none;
+}
+
+#logo-background {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#logo-banner {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 12%;
+    width: 100%;
+    position: relative;
+    bottom: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    
+}
+
+#logo {
+    height: 100%;
+}
+
+h1, #photo-credits {
+    color: white;
+}
+
+h1 {
+    font-family: "Norse";
+    font-size: 5rem;
+}
+
+#photo-credits {
+    text-align: center;
+    padding-bottom: 0.9rem;
+    font-size: 0.7rem;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: none;
+
+}
+
+#main-upper, #main-lower {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-upper {
+    width: 100%;
+    box-shadow: 1px 3px 5px lightgray;
+}
+
+#main-lower {
+    gap: 2rem;
+    width: 100%;
+}
+
+.form-intro-text {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+input,
+textarea,
+select,
+button {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: solid darkgray 1px;
+    border-radius: 3px;
+}
+
+input {
+    width: 90%;
+    height: 1.5rem;
+    
+}
+
+input:focus:required:invalid {
+    border: solid crimson 2px;
+    background-color: lightpink;
+}
+
+input:focus {
+    appearance: none;
+    border: solid lightseagreen 2px !important;
+}
+
+input:disabled {
+    border: solid darkgray 1px;
+    background-color: lightgray;
+}
+
+input:hover {
+    border: solid lightseagreen 2px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    appearance: none;
+    gap: 10px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+
+}
+
+li {
+    list-style: none;
+    width: 50%;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    top: -3px;
+    width: 100%;
+    font-size: 10px;
+}
+
+button {
+padding: 15px;
+background-color: #596D48;
+color: white;
+border-radius: 10px;
+}
